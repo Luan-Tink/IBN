@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>IBN</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Igreja Bereana em Natal" />
-	<meta name="keywords" content="igreja, bereana, bereanos, jesus, cristo" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
 	<meta name="author" content="Luan Gonçalves Barbosa" />
 
-	<meta property="og:title" content="Igreja Bereana em Natal"/>
+	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
 	<meta property="og:site_name" content=""/>
@@ -22,16 +23,40 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 	
-	<%= render 'application/favicon' %>
+	<%= stylesheet_link_tag "template/css/animate.css" %>
+	<%= stylesheet_link_tag "template/css/icomoon.css" %>
+	<%= stylesheet_link_tag "template/css/bootstrap.css" %>
+	<%= stylesheet_link_tag "template/css/magnific-popup.css" %>
+	<%= stylesheet_link_tag "template/css/flexslider.css" %>
+	<%= stylesheet_link_tag "template/css/owl.carousel.min.css" %>
+	<%= stylesheet_link_tag "template/css/owl.theme.default.min.css" %>
+	<%= stylesheet_link_tag "template/css/style.css" %>
+	
+	<%= javascript_include_tag "template/modernizr-2.6.2.min.js" %>
 
-    <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="fh5co-loader"></div>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload', recursive: true %>
-  </head>
+	<div id="page">
 
-  <body>
-    <%= yield %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<%= render :partial => "layouts/header" %>
+		
+		<div class="container-wrap"> <%= yield %> </div>
 
-  </body>
+		<%= render :partial => "layouts/footer" %>
+
+		<%= javascript_include_tag "template/jquery.min.js" %>
+		<%= javascript_include_tag "template/jquery.easing.1.3.js" %>
+		<%= javascript_include_tag "template/bootstrap.min.js" %>
+		<%= javascript_include_tag "template/jquery.waypoints.min.js" %>
+		<%= javascript_include_tag "template/jquery.flexslider-min.js" %>
+		<%= javascript_include_tag "template/owl.carousel.min.js" %>
+		<%= javascript_include_tag "template/jquery.magnific-popup.min.js" %>
+		<%= javascript_include_tag "template/magnific-popup-options.js" %>
+		<%= javascript_include_tag "template/jquery.countTo.js" %>
+		<%= javascript_include_tag "template/main.js" %>
+	</div>
+</body>
 </html>
+
