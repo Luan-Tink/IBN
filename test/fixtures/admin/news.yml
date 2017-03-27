@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  date: 2017-03-24
+  kind: 1
+  cover: MyString
+  thumb: MyString
+
+two:
+  title: MyString
+  description: MyString
+  date: 2017-03-24
+  kind: 1
+  cover: MyString
+  thumb: MyString

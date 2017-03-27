@@ -1,26 +1,26 @@
+<% c = controller_name %>
 <nav class="fh5co-nav" role="navigation">
 	<div class="container-wrap">
 		<div class="top-menu">
 			<div class="row">
 				<div class="col-md-12 col-offset-0 text-center">
-					<div id="fh5co-logo"><a href="index.html">Igreja Bereana em Natal</a></div>
+					<div id="fh5co-logo"><a href="/">Igreja Bereana em Natal</a></div>
 				</div>
 				<div class="col-md-12 col-md-offset-0 text-center menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="sermons.html">Sermões</a></li>
-						<li class="has-dropdown">
-							<a href="news.html">Notícias</a>
+						<li class="<%= c == "main" ? "active" : "" %>"><a href="/">Home</a></li>
+						<li class="<%= c == "sermons" ? "active" : "" %>"><a href="/sermons">Sermões</a></li>
+						<li class="has-dropdown <%= c == "news" ? "active" : "" %>"><a href="news">Notícias</a>
 							<ul class="dropdown">
 								<li><a href="#">Ministério</a></li>
 								<li><a href="#">Missões</a></li>
 								<li><a href="#">Aniversários</a></li>
-								<li><a href="#"></a></li>
+								<li><a href="#">Outros</a></li>
 							</ul>
 						</li>
-						<li><a href="events.html">Eventos</a></li>
-						<li><a href="about.html">Sobre</a></li>
-						<li><a href="contact.html">Contato</a></li>
+						<li class="<%= c == "events" ? "active" : "" %>"><a href="events">Eventos</a></li>
+						<li class="<%= c == "about" ? "active" : "" %>"><a href="about">Sobre</a></li>
+						<li><a href="contact">Contato</a></li>
 						<li><a href="#" class="donate">Contribua</a></li>
 					</ul>
 				</div>

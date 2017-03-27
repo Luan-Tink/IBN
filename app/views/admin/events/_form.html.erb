@@ -1,0 +1,42 @@
+<%= form_for(admin_event) do |f| %>
+  <% if admin_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(admin_event.errors.count, "error") %> prohibited this admin_event from being saved:</h2>
+
+      <ul>
+      <% admin_event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cover %>
+    <%= f.text_field :cover %>
+  </div>
+
+  <div class="field">
+    <%= f.label :thumb %>
+    <%= f.text_field :thumb %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -20,6 +20,12 @@ gem 'coffee-rails', '~> 4.2'
 # Favicons
 gem 'rails_real_favicon'
 
+# Use CarrierWave for images management
+gem 'carrierwave'
+
+# Use Cloudinary for images storage
+gem 'cloudinary'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
