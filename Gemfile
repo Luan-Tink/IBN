@@ -2,17 +2,29 @@ source 'https://rubygems.org'
 
 ruby '2.6.0'
 
+# Rails stuff
 gem 'rails', '~> 5.2.2'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'bootsnap', '>= 1.1.0', require: false
 
+# JS stuff
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
-gem 'bootsnap', '>= 1.1.0', require: false
+# WYSIWYG
+gem 'ckeditor', '~> 4.1', '>= 4.1.6'
+
+# Third part file upload
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'fog-aws', '~> 0.7.6'
+
+# Auth((orization)|(entication))
+gem 'devise', '~> 4.2'
+gem 'rolify', '~> 5.2'
 
 group :development, :test do
   gem 'pry', '~> 0.12.2'
